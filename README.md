@@ -1,14 +1,14 @@
-C++ codes
+#C++
 
 
-# Contents
+## Programs
 1. [Hello World](#hello-world)
 2. [Dtypes](#dtypes)
 3. [PosNeg](#posneg)
 4. [Comp](#comp)
 5. ...
 
-## Hello World
+ Hello World
 ```cpp
 #include<iostream>
 using namespace std;
@@ -16,12 +16,12 @@ int main(){
     cout<<"Hello World!";
 }
 ```
-OUTPUT
+output
 ```
 Hello World!              
 ```
 ***
-## Dtypes
+ Dtypes
 ```cpp
 #include<iostream>
 using namespace std;
@@ -54,7 +54,7 @@ int main(){
 
 }                                                                                                                                       
 ```
-OUTPUT
+output
 ```
 123
 v
@@ -66,7 +66,7 @@ size of bl is: 1
 size of size is: 8
 ```
 ***
-## PosNeg
+PosNeg
 ```cpp
 #include<iostream>
 using namespace std;
@@ -91,13 +91,13 @@ int main(){
 }
 
 ```
-OUTPUT
+output
 ```
 Enter value of a: 56
 56 is Positve
 ```
 ***
-## Comp
+Comp
 
 ```cpp
 #include<iostream>
@@ -121,7 +121,7 @@ int main(){
     }
 }
 ```
-OUTPUT
+output
 
 ```
 Enter value of a and b: 
