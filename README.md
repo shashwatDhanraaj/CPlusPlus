@@ -1,7 +1,7 @@
-Codes of C++
+C++ codes
 
 
-# Table of Contents
+# Contents
 1. [Hello World](#hello-world)
 2. [Dtypes](#dtypes)
 3. [PosNeg](#posneg)
