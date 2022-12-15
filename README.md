@@ -6,9 +6,23 @@
 2. [Dtypes](#dtypes)
 3. [PosNeg](#posneg)
 4. [Comp](#comp)
-5. ...
+5. [LowerUpperNumeric](#loweruppernumeric)
+6. [](#)
+7. [](#)
+8. [](#)
+9. [](#)
+10. [](#)
+11. [](#)
+12. [](#)
+13. [](#)
+14. [](#)
+15. [](#)
+16. [](#)
 
- Hello World
+
+
+***
+ ### Hello World
 ```cpp
 #include<iostream>
 using namespace std;
@@ -21,7 +35,7 @@ output
 Hello World!              
 ```
 ***
- Dtypes
+ ### Dtypes
 ```cpp
 #include<iostream>
 using namespace std;
@@ -66,7 +80,7 @@ size of bl is: 1
 size of size is: 8
 ```
 ***
-PosNeg
+### PosNeg
 ```cpp
 #include<iostream>
 using namespace std;
@@ -97,7 +111,7 @@ Enter value of a: 56
 56 is Positve
 ```
 ***
-Comp
+### Comp
 
 ```cpp
 #include<iostream>
@@ -132,3 +146,33 @@ Value of a and b is 105 & 56
 
 ```
 ***
+
+### LowerUpperNumeric
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    char ch;
+    cout<<"Enter the character to identify: ";
+    cin>> ch ;
+
+    if(isdigit(ch)){
+        cout<< ch <<" is number"<< endl;
+    }
+    else if(islower(ch)){
+        cout<< ch <<" is lower case alphabet"<< endl;
+    }
+    else{
+        cout<< ch <<" is upper case alphabet"<< endl;
+    }
+
+
+}
+```
+output
+```
+Enter the character to identify: A
+A is upper case alphabet
+```
