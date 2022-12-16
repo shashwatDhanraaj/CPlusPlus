@@ -18,7 +18,7 @@
 13. [Pattern7](#pattern7)
 14. [Pattern8](#pattern8)
 15. [Pattern9](#pattern9)
-16. [](#)
+16. [Pattern10](#pattern10)
 17. [](#)
 18. [](#)
 19. [](#)
@@ -561,13 +561,54 @@ output
  ****
 *****
 ```
-16. ### 
+16. ### Pattern10
 ```cpp
+#include<iostream>
+using namespace std;
 
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+
+    while (row<=n)
+    {
+        //space
+        
+        int space = row-1;
+        while (space)
+        {
+            cout<<" ";
+            space--;
+        }
+        //star
+        int col = 1;
+        while (col<=n-row+1)
+        {
+            cout<<"*";
+            col++;
+        }
+        cout<<endl;
+        row++;
+        
+        
+
+    }
+    
+}
 ```
 output
 ```
-
+7
+*******
+ ******
+  *****
+   ****
+    ***
+     **
+      *
 ```
 17. ### 
 ```cpp
