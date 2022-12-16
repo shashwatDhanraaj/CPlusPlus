@@ -2,27 +2,29 @@
 
 
 ## Programs
-1. [Hello World](#hello-world)
-2. [Dtypes](#dtypes)
-3. [PosNeg](#posneg)
-4. [Comp](#comp)
-5. [LowerUpperNumeric](#loweruppernumeric)
-6. [PrimeOrNot](#primeornot)
-7. [Pattern1](#pattern1)
-8. [Pattern2](#pattern2)
-9. [Pattern3](#pattern3)
-10. [Pattern4](#pattern4)
-11. [Pattern5](#pattern5)
-12. [](#)
-13. [](#)
-14. [](#)
-15. [](#)
-16. [](#)
+
+- [1 Hello World](#1-hello-world)
+- [2 Dtypes](#2-dtypes)
+- [3 PosNeg](#3-posneg)
+- [4 Comp](#4-comp)
+- [5 LowerUpperNumeric](#5-loweruppernumeric)
+- [6 PrimeOrNot](#6-primeornot)
+- [7 Pattern1](#7-pattern1)
+- [8 Pattern2](#8-pattern2)
+- [9 Pattern3](#9-pattern3)
+- [10 Pattern4](#10-pattern4)
+- [11 Pattern5](#11-pattern5)
+- [12 Pattern6](#12-pattern6)
+- [](#)
+- [](#)
+- [](#)
+- [](#)
+
 
 
 
 ***
- ### Hello World
+ ### 1 Hello World
 ```cpp
 #include<iostream>
 using namespace std;
@@ -35,7 +37,7 @@ output
 Hello World!              
 ```
 ***
- ### Dtypes
+ ### 2 Dtypes
 ```cpp
 #include<iostream>
 using namespace std;
@@ -80,7 +82,7 @@ size of bl is: 1
 size of size is: 8
 ```
 ***
-### PosNeg
+### 3 PosNeg
 ```cpp
 #include<iostream>
 using namespace std;
@@ -111,7 +113,7 @@ Enter value of a: 56
 56 is Positve
 ```
 ***
-### Comp
+### 4 Comp
 
 ```cpp
 #include<iostream>
@@ -147,7 +149,7 @@ Value of a and b is 105 & 56
 ```
 ***
 
-### LowerUpperNumeric
+### 5 LowerUpperNumeric
 
 ```cpp
 #include<iostream>
@@ -177,7 +179,7 @@ Enter the character to identify: A
 A is upper case alphabet
 ```
 
-### PrimeOrNot
+### 6 PrimeOrNot
 ```cpp
 #include<iostream>
 using namespace std;
@@ -209,7 +211,7 @@ prime for 4
 prime for 5
 prime for 6
 ```
-### Pattern1
+### 7 Pattern1
 ```cpp
 #include<iostream>
 using namespace std;
@@ -244,7 +246,7 @@ output
 *****
 *****
 ```
-### Pattern2
+### 8 Pattern2
 ```cpp
 #include<iostream>
 using namespace std;
@@ -279,7 +281,7 @@ output
 44444
 55555
 ```
-### Pattern3
+### 9 Pattern3
 ```cpp
 #include<iostream>
 using namespace std;
@@ -316,7 +318,7 @@ output
 1 2 3 4 5 
 1 2 3 4 5
 ```
-### Pattern4
+### 10 Pattern4
 ```cpp
 #include<iostream>
 using namespace std;
@@ -361,7 +363,7 @@ output
 16 17 18 19 20 
 21 22 23 24 25
 ```
-### Pattern5
+### 11 Pattern5
 ```cpp
 #include<iostream>
 using namespace std;
@@ -396,3 +398,40 @@ output
 * * * * 
 * * * * *
 ``` 
+
+### 12 Pattern6
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+
+        int n;
+        cin>>n;
+
+        int row = 1;
+        while(row<=n){
+            int count =row;
+            while (count>=1)
+            {
+               cout<< count << " ";
+               count--;
+            }
+            cout << endl;
+            row++;
+        }
+}
+```
+output
+```
+8
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1 
+6 5 4 3 2 1 
+7 6 5 4 3 2 1 
+8 7 6 5 4 3 2 1
+```
