@@ -7,12 +7,12 @@
 3. [PosNeg](#posneg)
 4. [Comp](#comp)
 5. [LowerUpperNumeric](#loweruppernumeric)
-6. [](#)
-7. [](#)
-8. [](#)
-9. [](#)
-10. [](#)
-11. [](#)
+6. [PrimeOrNot](#primeornot)
+7. [Pattern1](#pattern1)
+8. [Pattern2](#pattern2)
+9. [Pattern3](#pattern3)
+10. [Pattern4](#pattern4)
+11. [Pattern5](#pattern5)
 12. [](#)
 13. [](#)
 14. [](#)
@@ -176,3 +176,223 @@ output
 Enter the character to identify: A
 A is upper case alphabet
 ```
+
+### PrimeOrNot
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>> n;
+
+    int i = 2;
+
+    while(i<n){
+        if(n%i==0){
+            cout<<"not prime for"<< i << endl;
+        }
+        else{
+            cout<<"prime for "<< i << endl;
+
+        }
+        i++;
+    }
+}
+```
+output
+```
+7
+prime for 2
+prime for 3
+prime for 4
+prime for 5
+prime for 6
+```
+### Pattern1
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+
+    int i =1;
+    
+
+    while(i<=n){
+        int j = 1;
+        while (j<=n)
+        {
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+    }
+    
+}
+```
+output
+```
+5
+*****
+*****
+*****
+*****
+*****
+```
+### Pattern2
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+
+    int i =1;
+    
+
+    while(i<=n){
+        int j = 1;
+        while (j<=n)
+        {
+            cout<<i;
+            j++;
+        }
+        cout<<endl;
+        i++;
+        
+    }
+    
+}
+```
+output
+```
+5
+11111
+22222
+33333
+44444
+55555
+```
+### Pattern3
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    int i =1;
+    
+    while(i<=n){
+
+        int j=1;
+
+        while (j<=n)
+        {
+            cout<<j<<" ";
+            j++;
+        }
+        i++;
+        cout<<endl;
+        
+    }
+
+}
+```
+output
+```
+5
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5
+```
+### Pattern4
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    int i =1;
+    int count = 1;
+    while(i<=n){
+
+        int j = 1;
+        while ( j<=n)
+        {   
+            if(count<10){
+                cout<<" "<<count<<" ";
+
+            }
+            else{
+                cout<<count<<" ";
+            }
+            count++;
+            j++;
+        }
+        
+        cout<<endl;
+        
+        i++;
+        
+    }
+
+}
+```
+output
+```
+5
+ 1  2  3  4  5 
+ 6  7  8  9 10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25
+```
+### Pattern5
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    int row =1;
+
+    while (row<=n)
+    {
+        int col = 1;
+        while(col<=row)
+        {
+            cout<<"* ";
+            col++;
+        }
+        row++;
+        cout<<endl;
+    }
+    
+}
+```
+output
+```
+5
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+``` 
