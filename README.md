@@ -15,10 +15,14 @@
 10. [Pattern4](#pattern4)
 11. [Pattern5](#pattern5)
 12. [Pattern6](#pattern6)
-13. [](#)
-14. [](#)
-15. [](#)
+13. [Pattern7](#pattern7)
+14. [Pattern8](#pattern8)
+15. [Pattern9](#pattern9)
 16. [](#)
+17. [](#)
+18. [](#)
+19. [](#)
+20. [](#)
 
 
 
@@ -435,3 +439,166 @@ output
 7 6 5 4 3 2 1 
 8 7 6 5 4 3 2 1
 ```
+
+13. ### Pattern7
+```cpp
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+
+    while(row <= n) {
+
+        int col = row;
+
+        while(col <2*row) {
+            
+            cout<<col;
+            col++;
+            
+        }
+        cout<<endl;
+        row++;
+
+    }
+    return 0;
+}
+```
+output
+```
+5
+1
+23
+345
+4567
+56789
+```
+14. ### Pattern8
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n ;
+    cin>>n;
+
+    int row = 1;
+    while (row<=n)
+    {
+        int col =1;
+        
+        while (col<=n)
+        {
+            char ch ='A'+ row -1;
+            cout<<ch;
+            col++;
+        }
+        cout<<endl;
+        row++;
+    }
+
+}
+```
+output
+```
+7
+AAAAAAA
+BBBBBBB
+CCCCCCC
+DDDDDDD
+EEEEEEE
+FFFFFFF
+GGGGGGG
+```
+15. ### Pattern9
+```cpp
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+
+    while (row<=n)
+    {
+        //space
+        int space = n-row;
+        while (space)
+        {
+            cout<<" ";
+            space--;
+        }
+        
+        //star
+        int col = 1;
+        while (col<=row)
+        {
+            cout<<"*";
+            col++;
+        }
+        cout<<endl;
+        row++;
+        
+
+    }
+    
+}
+```
+output
+```
+5
+    *
+   **
+  ***
+ ****
+*****
+```
+16. ### 
+```cpp
+
+```
+output
+```
+
+```
+17. ### 
+```cpp
+
+```
+output
+```
+
+```
+18. ### 
+```cpp
+
+```
+output
+```
+
+```
+19. ### 
+```cpp
+
+```
+output
+```
+
+```
+20. ### 
+```cpp
+
+```
+output
+```
+
+```
+
