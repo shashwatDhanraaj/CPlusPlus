@@ -20,7 +20,7 @@
 15. [Pattern9](#pattern9)
 16. [Pattern10](#pattern10)
 17. [Pattern11](#pattern11)
-18. [](#)
+18. [Patttern12](#pattern12)
 19. [](#)
 20. [](#)
 
@@ -663,13 +663,63 @@ output
     37 38 39 40 41 42 43 44 45
  46 47 48 49 50 51 52 53 54 55
 ```
-18. ### 
+18. ### Pattern12
 ```cpp
+#include<iostream>
+using namespace std;
 
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+    while (row<=n)
+    {
+        //1st space
+        int space = n-row;
+        while(space){
+            cout<<" ";
+            space--;
+        }
+
+
+        //2nd number
+        int count = 1;
+        while (count<=row)
+        {
+            
+            cout<<count;
+            count++;
+            
+        }
+        int start = row-1;
+        while (start)
+        {
+            cout<<start;
+            start--;
+        }
+        
+        
+
+
+
+        //3rd rest part
+        
+        
+        cout<<endl;
+        row++;
+    }
+}
 ```
 output
 ```
-
+5
+    1
+   121
+  12321
+ 1234321
+123454321
 ```
 19. ### 
 ```cpp
