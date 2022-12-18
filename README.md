@@ -21,7 +21,7 @@
 16. [Pattern10](#pattern10)
 17. [Pattern11](#pattern11)
 18. [Patttern12](#pattern12)
-19. [](#)
+19. [Pattern13](#pattern13)
 20. [](#)
 
 
@@ -721,13 +721,58 @@ output
  1234321
 123454321
 ```
-19. ### 
+19. ### Pattern13
 ```cpp
+#include<iostream>
+using namespace std;
 
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+    while (row<=n)
+    {
+        //1st space
+        int count =1;
+            while (count<=(n+1)-row)
+            {
+               cout<< count << " ";
+               count++;
+            }
+        
+        int count2 = (row -1)*2;
+            while (count2)
+            {
+               cout<< "* ";
+               count2--;
+            }
+
+        int count3 = (n+1)-row;
+            while (count3>=1)
+            {
+               cout<< count3 << " ";
+               count3--;
+            }
+
+        cout<<endl;
+        row++;
+    }
+}
 ```
 output
 ```
-
+9
+1 2 3 4 5 6 7 8 9 9 8 7 6 5 4 3 2 1 
+1 2 3 4 5 6 7 8 * * 8 7 6 5 4 3 2 1 
+1 2 3 4 5 6 7 * * * * 7 6 5 4 3 2 1 
+1 2 3 4 5 6 * * * * * * 6 5 4 3 2 1 
+1 2 3 4 5 * * * * * * * * 5 4 3 2 1 
+1 2 3 4 * * * * * * * * * * 4 3 2 1 
+1 2 3 * * * * * * * * * * * * 3 2 1 
+1 2 * * * * * * * * * * * * * * 2 1 
+1 * * * * * * * * * * * * * * * * 1 
 ```
 20. ### 
 ```cpp
