@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin>>n;
+
+    int row = 1;
+    while (row<=n)
+    {
+        //1st space
+        int count =1;
+            while (count<=(n+1)-row)
+            {
+               cout<< count << " ";
+               count++;
+            }
+        
+        int count2 = (row -1)*2;
+            while (count2)
+            {
+               cout<< "* ";
+               count2--;
+            }
+
+        int count3 = (n+1)-row;
+            while (count3>=1)
+            {
+               cout<< count3 << " ";
+               count3--;
+            }
+
+        cout<<endl;
+        row++;
+    }
+}
