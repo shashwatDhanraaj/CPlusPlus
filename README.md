@@ -22,7 +22,7 @@
 17. [Pattern11](#pattern11)
 18. [Patttern12](#pattern12)
 19. [Pattern13](#pattern13)
-20. [](#)
+20. [BitwiseOper](#bitwiseoper)
 
 
 
@@ -773,20 +773,27 @@ output
 1 2 * * * * * * * * * * * * 2 1 
 1 * * * * * * * * * * * * * * 1 
 ```
-20. ### 
+20. ### BitwiseOper
 ```cpp
+#include<iostream>
+using namespace std;
 
+int main(){
+    int a =4;
+    int b= 6;
+
+    cout<< " a&b " << (a&b) << endl;
+    cout<< " a|b " << (a|b) << endl;
+    cout<< " ~a " << ~a <<endl;
+    cout<< " a^b " << (a^b) <<endl;
+    
+}
 ```
 output
 ```
-8
-1 2 3 4 5 6 7 8 8 7 6 5 4 3 2 1 
-1 2 3 4 5 6 7 * * 7 6 5 4 3 2 1 
-1 2 3 4 5 6 * * * * 6 5 4 3 2 1 
-1 2 3 4 5 * * * * * * 5 4 3 2 1 
-1 2 3 4 * * * * * * * * 4 3 2 1 
-1 2 3 * * * * * * * * * * 3 2 1 
-1 2 * * * * * * * * * * * * 2 1 
-1 * * * * * * * * * * * * * * 1 
+ a&b 4
+ a|b 6
+ ~a -5
+ a^b 2
 ```
 
