@@ -23,6 +23,13 @@
 18. [Patttern12](#pattern12)
 19. [Pattern13](#pattern13)
 20. [BitwiseOper](#bitwiseoper)
+21. [LeftRightShiftOperator](#leftrightshiftoperator)
+21. [](#)
+21. [](#)
+21. [](#)
+21. [](#)
+21. [](#)
+
 
 
 
@@ -796,4 +803,77 @@ output
  ~a -5
  a^b 2
 ```
+21. ### LeftRightShiftOperator
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a =4;
+    int b= 6;
+
+    cout<< " a&b " << (a&b) << endl;
+    cout<< " a|b " << (a|b) << endl;
+    cout<< " ~a " << ~a <<endl;
+    cout<< " a^b " << (a^b) <<endl;
+    
+}
+```
+output
+```
+8
+4
+38
+84
+```
+
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+21. ### 
+```cpp
+
+```
+output
+```
+
+```
+
 
